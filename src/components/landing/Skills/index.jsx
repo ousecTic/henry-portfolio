@@ -1,21 +1,30 @@
-import React from 'react';
-import AnchorLink from 'react-anchor-link-smooth-scroll';
-import { Container, Button } from 'components/common';
-import dev from 'assets/illustrations/skills.svg';
-import { Wrapper, SkillsWrapper, Details, Thumbnail } from './styles';
+import React from "react";
+import ReactPlayer from "react-player";
+import AnchorLink from "react-anchor-link-smooth-scroll";
+import { Container, Button } from "components/common";
+import dev from "assets/illustrations/skills.svg";
+import { Wrapper, SkillsWrapper, Details, Thumbnail } from "./styles";
 
 export const Skills = () => (
   <Wrapper id="about">
     <SkillsWrapper as={Container}>
-      <Thumbnail>
-        <img src={dev} alt="I’m John and I’m a Backend & Devops engineer!" />
-      </Thumbnail>
+      <ReactPlayer url="https://www.youtube.com/watch?v=ldYcgPKEZC8" />
       <Details>
-        <h1>Hi There!</h1>
+        <h1>Check out my youtube Channel!</h1>
         <p>
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s
-          standard dummy.
+          I am a freecodecamp video contributer. I create content over
+          deployment, database design, and full stack!
         </p>
+        <Button style={{ marginRight: "1rem" }}>
+          <a
+            href="https://www.youtube.com/channel/UCAPuqvFWmUg_gc_AZHUBPsA"
+            target="_blank"
+            style={{ color: "white" }}
+          >
+            Check out my channel
+          </a>
+        </Button>
+
         <Button as={AnchorLink} href="#contact">
           Hire me
         </Button>
