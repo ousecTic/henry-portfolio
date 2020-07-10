@@ -26,7 +26,7 @@ export const Skills = () => (
         </Button>
 
         <Button as={AnchorLink} href="#contact">
-          Hire me
+          Contact Me
         </Button>
       </Details>
     </SkillsWrapper>

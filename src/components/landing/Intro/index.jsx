@@ -13,11 +13,14 @@ export const Intro = () => (
         <h1>Hi There!</h1>
         <h4>I’m Henry and I’m a MERN and PERN stack developer!</h4>
         <Button as={AnchorLink} href="#contact">
-          Hire me
+          Contact Me
         </Button>
       </Details>
       <Thumbnail>
-        <img src={dev} alt="I’m John and I’m a JAMStack engineer!" />
+        <img
+          src={dev}
+          alt="I’m Henry and I’m a MERN and PERN stack developer!"
+        />
       </Thumbnail>
     </IntroWrapper>
   </Wrapper>
